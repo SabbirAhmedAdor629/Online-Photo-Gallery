@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Online PhotoGallery-Login</title>
+   <style>
+   
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+   }
+
+.body{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url("ad.jpg");
+	background-size: cover;
+	filter: blur(3px);
+	z-index: 0;
+}
+
+.grad{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background: gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.header{
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(30% - 255px);
+	z-index: 2;
+}
+
+.header div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 50px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #5379fa !important;
+}
+
+.login{
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+}
+.log #lo {
+	box-shadow: 0 0 10px white;
+	transition:all 1s ease-in-out;
+}
+
+.create_account
+{
+
+    position: absolute;
+	top: calc(64.5% - 75px);
+	left: calc(75% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	box-shadow: 0 0 20px white;
+	transition:all 1s ease-in-out;
+	z-index: 2;
+}
+
+.create_account:hover {
+
+      box-shadow: 0 0 500px white;
+      background-color: red;
+      transform:rotate(360deg);
+}
+
+
+	@-moz-keyframes spaceboots {
+	0% { -moz-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -moz-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -moz-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -moz-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -moz-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -moz-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -moz-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -moz-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -moz-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -moz-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -moz-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+.log #lo:hover{
+
+	  box-shadow: 0 0 500px white;
+	  background-color: black;
+	  border-color: black;
+      animation-name: spaceboots;
+      animation-duration: 0.8s;
+      transform-origin:50% 50%;
+ 	  animation-iteration-count: infinite;
+	  animation-timing-function: linear;
+}
+
+.create_account input[type=button]{
+	width: 160px;
+	height: 35px;
+	background: black;
+	border: 1px solid black;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #FFFFFF;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.create_account input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.create_account input[type=button]:active{
+	opacity: 0.6;
+}
+
+
+
+.create_account input[type=button]:focus{
+	outline: none;
+}
+
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+.login input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.login input[type=button]{
+	width: 260px;
+	height: 35px;
+	background: transparent;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: white;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+	outline: none;
+}
+
+input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+</style>
+<script type="text/javascript">
+	
+	function validateForm() {
+		var check=document.forms["log_form"]["user"].value;
+		var check0=document.forms["log_form"]["pass"].value;
+		if((check==null||check=="")||(check0==null||check0==""))
+		{
+			alert("Enter username or Password!");
+			return false;
+		}
+		else 
+		{
+			
+              	return window.location.href='dat.php';
+		}
+		
+	}
+</script>
+   
+</head>
+
+<body>
+
+        <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+		<div>Online<span>Photo</span><span>Gallery</span></div>
+		</div>
+		<br>
+		<div class="login">
+		
+<form action="dat.php" method="POST" name="log_form">
+			<input type="text" placeholder="username" name ="user"><br>
+			<input type="password" placeholder="password" name="pass"><br><br>		
+			<div class="log" style="width:260px; height:35px"><input type="button"  value="Login" onclick="return validateForm()" style="margin-top:0px" id = "lo" ></div>
+      </form>
+		
+		</div>
+
+         <div class="create_account" style="width:140px; height:15px">
+		<input type="button" value="Create Account" ONCLICK="window.location.href='create_account-form.html'" style="margin-left:-10px; margin-top:-10px"/>
+       </div>
+  
+
+</body>
+
+</html>

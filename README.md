@@ -1,2 +1,2 @@
-# Online-Photo-Gallery
-A very basic project to practice Javascript, PHP and HTML CSS.
+# Photo-Gallery
+More experience with HTML, CSS, PHP and JavaScript
